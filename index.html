@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts: Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-body-tertiary d-flex flex-column min-vh-100">
+    <header class="bg-dark text-white text-center py-4 mb-4 shadow-sm">
+        <div class="container">
+            <h1 class="display-6 fw-bold mb-0">ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
+        </div>
+    </header>
+
+    <main class="container my-3 flex-grow-1">
+        <!-- ข้อมูลส่วนตัว Card -->
+        <div class="card shadow-sm mb-4 border-0">
+            <div class="card-header bg-primary text-white py-3">
+                <h5 class="card-title mb-0 fw-bold">👤 ข้อมูลส่วนตัว</h5>
+            </div>
+            <div class="card-body">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <span class="text-secondary">ชื่อ:</span>
+                        <strong class="ms-1">จอมขวัญ iApp</strong>
+                    </div>
+                    <div class="col">
+                        <span class="text-secondary">อายุ:</span>
+                        <strong class="ms-1">20 ปี</strong>
+                    </div>
+                    <div class="col">
+                        <span class="text-secondary">เพศ:</span>
+                        <strong class="ms-1">หญิง</strong>
+                    </div>
+                    <div class="col">
+                        <span class="text-secondary">สัญชาติ:</span>
+                        <strong class="ms-1">ไทย</strong>
+                    </div>
+                    <div class="col">
+                        <span class="text-secondary">ศาสนา:</span>
+                        <strong class="ms-1">พุทธ</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- สิ่งที่ชอบ และไม่ชอบ -->
+        <h2 class="h4 fw-bold mb-3 text-secondary">สิ่งที่ชอบ และไม่ชอบ</h2>
+        <div class="row g-4 mb-4">
+            <!-- สิ่งที่ชอบ (คอลัมน์ซ้าย) -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-header bg-info-subtle text-info-emphasis py-3 border-0">
+                        <h5 class="card-title mb-0 fw-bold">สิ่งที่ชอบ</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-primary rounded-pill me-2">1</span>
+                            ชอบอ่านนิยาย
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-primary rounded-pill me-2">2</span>
+                            ชอบเล่นเกม
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-primary rounded-pill me-2">3</span>
+                            ชอบสุนัข
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- สิ่งที่ไม่ชอบ (คอลัมน์ขวา) -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-header bg-danger-subtle text-danger-emphasis py-3 border-0">
+                        <h5 class="card-title mb-0 fw-bold">สิ่งที่ไม่ชอบ</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-danger rounded-pill me-2">1</span>
+                            ไม่ชอบเขียนเว็บไซต์
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-danger rounded-pill me-2">2</span>
+                            ไม่ชอบเขียนโปรแกรม
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="badge bg-danger rounded-pill me-2">3</span>
+                            ไม่ชอบงู
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center my-4">
+            <a href="/article.html" class="btn btn-outline-secondary">
+                ดูหน้าตัวอย่าง Album (article.html) &rarr;
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <div class="row gy-2">
+                <div class="col-12 col-md-4">
+                    <small>📧 <strong>ข้อมูลติดต่อ:</strong> [EMAIL_ADDRESS]</small>
+                </div>
+                <div class="col-12 col-md-4">
+                    <small>📞 <strong>เบอร์โทร:</strong> 098-304-8209</small>
+                </div>
+                <div class="col-12 col-md-4">
+                    <small>🌐 <strong>Facebook:</strong> Comkwan iApp</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- นำเข้า Bootstrap CSS และ JS ผ่าน Vite -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+// ปรับแต่งตัวแปรของ Bootstrap ก่อน Import
+$font-family-sans-serif: 'Kanit', sans-serif;
+
+// โทนสีฟ้า Pastel
+$pastel-blue: #90caf9;
+$primary: $pastel-blue;
+
+// นำเข้า Bootstrap SCSS ทั้งหมด
+@import "bootstrap/scss/bootstrap";
+
+// บังคับใช้ฟอนต์ Kanit กับทั้งหน้าเว็บ
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+// ตกแต่งปุ่มสีฟ้า Pastel เพิ่มเติมให้อ่านง่าย สบายตา และมีลูกเล่น Hover นุ่มนวล
+.btn-primary {
+    --bs-btn-color: #123456;
+    --bs-btn-bg: #{$pastel-blue};
+    --bs-btn-border-color: #{$pastel-blue};
+    --bs-btn-hover-color: #0b2239;
+    --bs-btn-hover-bg: #74b9f8;
+    --bs-btn-hover-border-color: #74b9f8;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #4ba2f3;
+    --bs-btn-active-border-color: #4ba2f3;
+    --bs-btn-focus-shadow-rgb: 144, 202, 249;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(144, 202, 249, 0.4);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 10px rgba(144, 202, 249, 0.5);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 4px rgba(144, 202, 249, 0.3);
+    }
+}
